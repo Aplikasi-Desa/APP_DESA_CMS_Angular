@@ -10,4 +10,14 @@ export class PendudukComponent {
   data: any;
   page: any = 1;
   pageSize: any = 8;
+
+  ngOnInit(): void {
+    /**
+    * BreadCrumb
+    */
+     this.breadCrumbItems = [
+      { label: 'Data Desa' },
+      { label: 'Penduduk', active: true }
+    ];
+  }
 }

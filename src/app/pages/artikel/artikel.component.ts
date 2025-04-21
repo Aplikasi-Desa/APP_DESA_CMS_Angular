@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./artikel.component.scss']
 })
 export class ArtikelComponent {
-
+  breadCrumbItems!: Array<{}>;
+  data: any;
+  page: any = 1;
+  pageSize: any = 8;
 }
