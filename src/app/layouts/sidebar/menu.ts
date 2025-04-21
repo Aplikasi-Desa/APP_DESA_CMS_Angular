@@ -16,7 +16,20 @@ export const MENU: MenuItem[] = [
     id: 4,
     label: 'MENUITEMS.ARTIKEL.TEXT',
     icon: 'ri-newspaper-fill',
-    link: '/artikel',
+    subItems: [
+      {
+        id: 3,
+        label: 'MENUITEMS.ARTIKEL.LIST.AGENDA',
+        link: '/artikel/agenda',
+        parentId: 5
+      },
+      {
+        id: 4,
+        label: 'MENUITEMS.ARTIKEL.LIST.BERITA',
+        link: '/artikel/berita',
+        parentId: 5
+      },
+    ]
   },
   {
     id: 5,

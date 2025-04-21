@@ -19,13 +19,13 @@ import { SharedModule } from "../shared/shared.module";
 import { DashboardComponent } from './dashboards/dashboard/dashboard.component';
 import { ToastsContainer } from './dashboards/dashboard/toasts-container.component';
 import { DashboardsModule } from "./dashboards/dashboards.module";
-import { ArtikelComponent } from './artikel/artikel.component';
+// import { ArtikelComponent } from './artikel/artikel.component';
 
 @NgModule({
   declarations: [
     DashboardComponent,
     ToastsContainer,
-    ArtikelComponent,
+    // ArtikelComponent,
   ],
   imports: [
     CommonModule,

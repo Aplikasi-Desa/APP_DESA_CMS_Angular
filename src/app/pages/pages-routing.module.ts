@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 // Component pages
 import { DashboardComponent } from "./dashboards/dashboard/dashboard.component";
-import { ArtikelComponent } from './artikel/artikel.component';
+// import { ArtikelComponent } from './artikel/artikel.component';
 
 const routes: Routes = [
   {
@@ -11,8 +11,8 @@ const routes: Routes = [
     component: DashboardComponent
   },
   {
-    path: "artikel",
-    component: ArtikelComponent
+    path: 'artikel', loadChildren: () => import('./artikel/berita.module').then(m => m.ArtikelModule)
+
   },
   {
     path: '', loadChildren: () => import('./dashboards/dashboards.module').then(m => m.DashboardsModule)
