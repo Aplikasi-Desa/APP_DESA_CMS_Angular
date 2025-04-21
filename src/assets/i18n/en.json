@@ -14,11 +14,24 @@
     "PENDES": {
       "TEXT": "Pengguna / Desa"
     },
-    "MONITORING": {
-      "TEXT": "Monitoring"
+    "ARTIKEL": {
+      "TEXT": "Artikel"
     },
-    "HAKAKSES": {
-      "TEXT": "Hak Akses"
+    "PEMERINTAHAN": {
+      "TEXT": "Pemerintahan",
+      "LIST": {
+        "VISIMISI": "Visi Misi",
+        "STRUKTUR": "Struktur"
+      }
+    },
+    "DATADESA": {
+      "TEXT": "Data Desa",
+      "LIST": {
+        "DESA": "Desa",
+        "PENDUDUK": "Penduduk",
+        "WILAYAH": "Wilayah",
+        "ANGGARAN": "Anggaran"
+      }
     },
     "APPS": {
       "TEXT": "Apps",

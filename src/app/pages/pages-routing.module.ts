@@ -4,8 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 // Component pages
 import { DashboardComponent } from "./dashboards/dashboard/dashboard.component";
 import { PenggunaDesaComponent } from './pengguna-desa/pengguna-desa.component';
-import { MonitoringComponent } from './monitoring/monitoring.component';
-import { HakAksesComponent } from './hak-akses/hak-akses.component';
+import { ArtikelComponent } from './artikel/artikel.component';
 
 const routes: Routes = [
   {
@@ -17,15 +16,21 @@ const routes: Routes = [
     component: PenggunaDesaComponent
   },
   {
-    path: "monitoring",
-    component: MonitoringComponent
+    path: "pendes",
+    component: PenggunaDesaComponent
   },
   {
-    path: "hakakses",
-    component: HakAksesComponent
+    path: "artikel",
+    component: ArtikelComponent
   },
   {
     path: '', loadChildren: () => import('./dashboards/dashboards.module').then(m => m.DashboardsModule)
+  },
+  {
+    path: 'pemerintahan', loadChildren: () => import('./pemerintahan/pemerintahan.module').then(m => m.PemerintahanModule)
+  },
+  {
+    path: 'data-desa', loadChildren: () => import('./data-desa/data-desa.module').then(m => m.DataDesaModule)
   },
 ];
 

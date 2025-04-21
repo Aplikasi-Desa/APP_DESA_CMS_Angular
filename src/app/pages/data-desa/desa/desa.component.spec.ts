@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HakAksesComponent } from './hak-akses.component';
+import { DesaComponent } from './desa.component';
 
-describe('HakAksesComponent', () => {
-  let component: HakAksesComponent;
-  let fixture: ComponentFixture<HakAksesComponent>;
+describe('DesaComponent', () => {
+  let component: DesaComponent;
+  let fixture: ComponentFixture<DesaComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HakAksesComponent ]
+      declarations: [ DesaComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(HakAksesComponent);
+    fixture = TestBed.createComponent(DesaComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -20,16 +20,14 @@ import { DashboardComponent } from './dashboards/dashboard/dashboard.component';
 import { ToastsContainer } from './dashboards/dashboard/toasts-container.component';
 import { DashboardsModule } from "./dashboards/dashboards.module";
 import { PenggunaDesaComponent } from './pengguna-desa/pengguna-desa.component';
-import { MonitoringComponent } from './monitoring/monitoring.component';
-import { HakAksesComponent } from './hak-akses/hak-akses.component';
+import { ArtikelComponent } from './artikel/artikel.component';
 
 @NgModule({
   declarations: [
     DashboardComponent,
     ToastsContainer,
     PenggunaDesaComponent,
-    MonitoringComponent,
-    HakAksesComponent
+    ArtikelComponent,
   ],
   imports: [
     CommonModule,
