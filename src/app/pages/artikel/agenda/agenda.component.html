@@ -1,0 +1,120 @@
+<!-- Start Breadcrumbs -->
+<app-breadcrumbs title="Struktur" [breadcrumbItems]="breadCrumbItems"></app-breadcrumbs>
+<!-- End Breadcrumbs -->
+
+<div class="row"></div>
+    <div class="col-lg-12">
+        <div class="card" id="applicationList">
+
+        <div class="card-body">
+            <div id="customerList">
+                <div class="row g-4 mb-3">
+                    <div class="col-sm-auto">
+                        <div class="d-flex gap-1">
+                            <div class="search-box ms-2">
+                                <input type="text" class="form-control search" placeholder="Search...">
+                                <i class="ri-search-line search-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="d-flex justify-content-sm-end">
+                            <button type="button" class="btn btn-primary add-btn" data-bs-toggle="modal"
+                                id="create-btn" data-bs-target="#showModal"><i
+                                    class="ri-add-fill align-bottom me-1"></i> Tambah</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table-responsive mb-3">
+                    <table class="table table-nowrap mb-0">
+                        <thead class="table-light">
+                            <tr>
+                                <th scope="col">ID</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Job Title</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">Status</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="fw-medium">01</td>
+                                    <td>Annette Black</td>
+                                    <td>Industrial Designer</td>
+                                    <td>10, Nov 2021</td>
+                                    <td><span class="badge badge-soft-success">Active</span></td>
+                                    <td>
+                                        <div class="hstack gap-3 fs-15">
+                                            <a href="javascript:void(0);" class="link-primary"><i
+                                                    class="ri-settings-4-line"></i></a>
+                                            <a href="javascript:void(0);" class="link-danger"><i
+                                                    class="ri-delete-bin-5-line"></i></a>
+                                        </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="fw-medium">02</td>
+                                <td>Bessie Cooper</td>
+                                <td>Graphic Designer</td>
+                                <td>13, Nov 2021</td>
+                                <td><span class="badge badge-soft-success">Active</span></td>
+                                <td>
+                                    <div class="hstack gap-3 fs-15">
+                                        <a href="javascript:void(0);" class="link-primary"><i
+                                                class="ri-settings-4-line"></i></a>
+                                        <a href="javascript:void(0);" class="link-danger"><i
+                                                class="ri-delete-bin-5-line"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="fw-medium">03</td>
+                                <td>Leslie Alexander</td>
+                                <td>Product Manager</td>
+                                <td>17, Nov 2021</td>
+                                <td><span class="badge badge-soft-success">Active</span></td>
+                                <td>
+                                    <div class="hstack gap-3 fs-15">
+                                        <a href="javascript:void(0);" class="link-primary"><i
+                                                class="ri-settings-4-line"></i></a>
+                                        <a href="javascript:void(0);" class="link-danger"><i
+                                                class="ri-delete-bin-5-line"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="fw-medium">04</td>
+                                <td>Lenora Sandoval</td>
+                                <td>Applications Engineer</td>
+                                <td>25, Nov 2021</td>
+                                <td><span class="badge badge-soft-danger">Disabled</span></td>
+                                <td>
+                                    <div class="hstack gap-3 fs-15">
+                                        <a href="javascript:void(0);" class="link-primary"><i
+                                                class="ri-settings-4-line"></i></a>
+                                        <a href="javascript:void(0);" class="link-danger"><i
+                                                class="ri-delete-bin-5-line"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <ngb-pagination class="d-flex justify-content-end pt-2" [collectionSize]="data? data.length : 0"
+                        [(page)]="page" [pageSize]="pageSize" aria-label="Custom pagination">
+                        <ng-template ngbPaginationPrevious let-page let-pages="pages">
+                            <i class="ci-arrow-left me-2"></i>
+                            Prev
+                        </ng-template>
+                        <ng-template ngbPaginationNext>
+                            Next
+                            <i class="ci-arrow-right ms-2"></i>
+                        </ng-template>
+                </ngb-pagination>
+            </div>
+        </div><!-- end card -->
+    </div>
+</div>
