@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./penduduk.component.scss']
 })
 export class PendudukComponent {
-
+  breadCrumbItems!: Array<{}>;
+  data: any;
+  page: any = 1;
+  pageSize: any = 8;
 }

@@ -3,21 +3,12 @@ import { RouterModule, Routes } from '@angular/router';
 
 // Component pages
 import { DashboardComponent } from "./dashboards/dashboard/dashboard.component";
-import { PenggunaDesaComponent } from './pengguna-desa/pengguna-desa.component';
 import { ArtikelComponent } from './artikel/artikel.component';
 
 const routes: Routes = [
   {
     path: "",
     component: DashboardComponent
-  },
-  {
-    path: "pendes",
-    component: PenggunaDesaComponent
-  },
-  {
-    path: "pendes",
-    component: PenggunaDesaComponent
   },
   {
     path: "artikel",

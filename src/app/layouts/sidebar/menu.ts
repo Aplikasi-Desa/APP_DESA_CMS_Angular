@@ -13,12 +13,6 @@ export const MENU: MenuItem[] = [
     link: '/',
   },
   {
-    id: 3,
-    label: 'MENUITEMS.PENDES.TEXT',
-    icon: 'ri-team-fill',
-    link: '/pendes',
-  },
-  {
     id: 4,
     label: 'MENUITEMS.ARTIKEL.TEXT',
     icon: 'ri-newspaper-fill',
