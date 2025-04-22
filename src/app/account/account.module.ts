@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
-import { NgbToastModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbCarouselModule, NgbToastModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { ToastsContainer } from './login/toasts-container.component';
 
@@ -25,7 +25,8 @@ import { LoginComponent } from './login/login.component';
     FormsModule,
     AccountRoutingModule,
     SigninModule,
-    NgbToastModule
+    NgbToastModule,
+    NgbCarouselModule
   ]
 })
 export class AccountModule { }

@@ -28,6 +28,7 @@ export class LoginComponent implements OnInit {
   returnUrl!: string;
   // set the current year
   year: number = new Date().getFullYear();
+  showNavigationArrows: any;
 
   constructor(private formBuilder: FormBuilder,private authenticationService: AuthenticationService,private router: Router,
     private authFackservice: AuthfakeauthenticationService,private route: ActivatedRoute, public toastService: ToastService) {

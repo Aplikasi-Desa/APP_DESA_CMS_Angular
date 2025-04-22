@@ -23,9 +23,8 @@ import { BeritaComponent } from './berita/berita.component';
 
 @NgModule({
   declarations: [
-  
-     AgendaComponent,
-       BeritaComponent
+    AgendaComponent,
+    BeritaComponent
   ],
   imports: [
     CommonModule,

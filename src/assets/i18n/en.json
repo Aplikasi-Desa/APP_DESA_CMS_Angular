@@ -12,7 +12,11 @@
       "TEXT": "Dashboards"
     },
     "ARTIKEL": {
-      "TEXT": "Artikel"
+      "TEXT": "Artikel",
+      "LIST": {
+        "AGENDA": "Agenda",
+        "BERITA": "Berita"
+      }
     },
     "PEMERINTAHAN": {
       "TEXT": "Pemerintahan",

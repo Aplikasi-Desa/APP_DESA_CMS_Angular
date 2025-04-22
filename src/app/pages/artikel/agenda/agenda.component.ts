@@ -10,4 +10,13 @@ export class AgendaComponent {
   data: any;
   page: any = 1;
   pageSize: any = 8;
+  
+  ngOnInit(): void {
+    /**
+    * BreadCrumb
+    */
+     this.breadCrumbItems = [
+      { label: 'Agenda', active: true }
+    ];
+  }
 }
