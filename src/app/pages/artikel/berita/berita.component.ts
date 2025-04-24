@@ -16,6 +16,7 @@ export class BeritaComponent {
     * BreadCrumb
     */
      this.breadCrumbItems = [
+      { label: 'Artikel'},
       { label: 'Berita', active: true }
     ];
   }

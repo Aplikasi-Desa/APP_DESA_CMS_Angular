@@ -16,6 +16,7 @@ export class AgendaComponent {
     * BreadCrumb
     */
      this.breadCrumbItems = [
+      { label: 'Artikel'},
       { label: 'Agenda', active: true }
     ];
   }
