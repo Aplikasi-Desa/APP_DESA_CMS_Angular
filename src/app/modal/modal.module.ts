@@ -14,12 +14,16 @@ import { SimplebarAngularModule } from 'simplebar-angular';
 import { SharedModule } from '../shared/shared.module';
 import { ModalAgendaComponent } from './modal-agenda/modal-agenda.component';
 import { ModalBeritaComponent } from './modal-berita/modal-berita.component';
+import { ModalDesaComponent } from './modal-desa/modal-desa.component';
+import { ModalPendudukComponent } from './modal-penduduk/modal-penduduk.component';
 
 
 @NgModule({
   declarations: [
     ModalAgendaComponent,
-    ModalBeritaComponent
+    ModalBeritaComponent,
+    ModalDesaComponent,
+    ModalPendudukComponent
   ],
   imports: [
     CommonModule,
@@ -42,7 +46,9 @@ import { ModalBeritaComponent } from './modal-berita/modal-berita.component';
   ],
   exports: [
     ModalAgendaComponent,
-    ModalBeritaComponent
+    ModalBeritaComponent,
+    ModalDesaComponent,
+    ModalPendudukComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
