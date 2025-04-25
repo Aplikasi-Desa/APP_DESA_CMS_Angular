@@ -26,7 +26,7 @@ export class BeritaComponent {
       { label: 'Berita', active: true }
     ];
   }
-  ModalAgenda(modalFilter: any) {
+  ModalBerita(modalFilter: any) {
     this.displayBerita = this.modalService.open(modalFilter, { size: 'lg', centered: true });
   }
 }

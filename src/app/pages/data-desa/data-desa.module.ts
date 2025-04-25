@@ -22,6 +22,7 @@ import { DesaComponent } from './desa/desa.component';
 import { WilayahComponent } from './wilayah/wilayah.component';
 import { PendudukComponent } from './penduduk/penduduk.component';
 import { AnggaranComponent } from './anggaran/anggaran.component';
+import { ModalModule } from 'src/app/modal/modal.module';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { AnggaranComponent } from './anggaran/anggaran.component';
     NgbTypeaheadModule,
     NgbPaginationModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ModalModule
   ],
 })
 export class DataDesaModule { }
