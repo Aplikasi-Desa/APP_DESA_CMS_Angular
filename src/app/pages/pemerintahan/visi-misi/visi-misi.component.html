@@ -79,9 +79,20 @@
                     </div>
                 </div>
                 <div class="text-end">
-                    <a href="javascript:void(0);" class="btn btn-primary">Update</a>
+                    <a href="javascript:void(0);" class="btn btn-primary" (click)="ModalVisiMisi(modalVisiMisi)">Update</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<ng-template #modalVisiMisi let-modal>
+    <div class="modal-content">
+        <div class="modal-header">
+            <h6 class="modal-title">Update Visi Misi</h6>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                (click)="modal.dismiss('Cross click')"></button>
+        </div>
+        <app-modal-visi-misi></app-modal-visi-misi>
+    </div>
+</ng-template>

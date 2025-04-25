@@ -11,7 +11,7 @@ export class VisiMisiComponent {
   data: any;
   page: any = 1;
   pageSize: any = 8;
-  displaySalinData: any;
+  displayVisiMisi: any;
   
     constructor(
       private modalService: NgbModal
@@ -27,7 +27,7 @@ export class VisiMisiComponent {
     ];
   }
 
-  ModalSalinData(modalFilter: any) {
-    this.displaySalinData = this.modalService.open(modalFilter, { size: 'lg', centered: true });
+  ModalVisiMisi(modalFilter: any) {
+    this.displayVisiMisi = this.modalService.open(modalFilter, { size: 'lg', centered: true });
   }
 }

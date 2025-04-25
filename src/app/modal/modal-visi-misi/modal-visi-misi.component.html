@@ -1,0 +1,47 @@
+<p>modal-visi-misi works!</p>
+<div class="modal-content">
+    <div class="modal-body form-steps needs-validation">
+        <hr style="width:100%;text-align:left;margin-left:0">
+        <div class="mb-3">
+            <label class="form-label">Visi</label>
+            <textarea class="form-control" placeholder="masukan visi" rows="3"></textarea>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Deskripsi</label>
+            <ng-select  class="mb-2" bindLabel="namanpp" bindValue="npp" placeholder="Anggota Tim" loadingText='Loading...' disabled>
+            </ng-select>
+            <!-- <div *ngFor="let item of model.anggotatim; let i=index">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-2">
+                            <ng-select name="npp{{i}}" class="mb-2"
+                                       [items]="selectAnggota[i]"
+                                       bindLabel="namanpp" bindValue="npp" placeholder="Anggota Tim"
+                                       [(ngModel)]="item.npp" loadingText='Loading...' disabled>
+                            </ng-select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-2">
+                            <ng-select name="id_peran_anggota_tim{{i}}" class="mb-2"
+                                       [items]="select.peranAnggota" bindLabel="item" bindValue="id"
+                                       placeholder="Peran Anggota Tim"
+                                       [(ngModel)]="item.id_peran_anggota_tim" disabled>
+                            </ng-select>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <div class="d-flex align-items-start gap-3 mt-4">
+            <button type="button" class="btn btn-success ms-auto" data-bs-toggle="modal"><i
+                    class="ri-save-3-fill me-1 align-bottom"></i>
+                Simpan
+            </button>
+            <button type="button" class="btn btn-danger" data-bs-toggle="modal"><i
+                    class="ri-close-fill me-1 align-bottom"></i>
+                Batal
+            </button>
+        </div>
+    </div>
+</div>
