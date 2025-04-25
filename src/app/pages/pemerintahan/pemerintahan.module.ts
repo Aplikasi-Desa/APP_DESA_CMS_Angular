@@ -20,6 +20,7 @@ import { SharedModule } from '../../shared/shared.module';
 import { PemerintahanRoutingModule } from './pemerintahan-routing.module';
 import { VisiMisiComponent } from './visi-misi/visi-misi.component';
 import { StrukturComponent } from './struktur/struktur.component';
+import { ModalModule } from 'src/app/modal/modal.module';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { StrukturComponent } from './struktur/struktur.component';
     NgbTypeaheadModule,
     NgbPaginationModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ModalModule
   ],
 })
 export class PemerintahanModule { }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-berita',
@@ -10,6 +11,11 @@ export class BeritaComponent {
   data: any;
   page: any = 1;
   pageSize: any = 8;
+  displayBerita: any;
+  
+    constructor(
+      private modalService: NgbModal
+    ) {}
 
   ngOnInit(): void {
     /**
@@ -19,5 +25,8 @@ export class BeritaComponent {
       { label: 'Artikel'},
       { label: 'Berita', active: true }
     ];
+  }
+  ModalAgenda(modalFilter: any) {
+    this.displayBerita = this.modalService.open(modalFilter, { size: 'lg', centered: true });
   }
 }

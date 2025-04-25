@@ -11,11 +11,11 @@ const routes: Routes = [
     component: DashboardComponent
   },
   {
-    path: 'artikel', loadChildren: () => import('./artikel/berita.module').then(m => m.ArtikelModule)
-
+    path: '', loadChildren: () => import('./dashboards/dashboards.module').then(m => m.DashboardsModule)
   },
   {
-    path: '', loadChildren: () => import('./dashboards/dashboards.module').then(m => m.DashboardsModule)
+    path: 'artikel', loadChildren: () => import('./artikel/artikel.module').then(m => m.ArtikelModule)
+
   },
   {
     path: 'pemerintahan', loadChildren: () => import('./pemerintahan/pemerintahan.module').then(m => m.PemerintahanModule)

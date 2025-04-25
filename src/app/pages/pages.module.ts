@@ -1,7 +1,7 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { NgbToastModule, NgbProgressbarModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbToastModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { FlatpickrModule } from 'angularx-flatpickr';
 import { CountToModule } from 'angular-count-to';
@@ -19,13 +19,13 @@ import { SharedModule } from "../shared/shared.module";
 import { DashboardComponent } from './dashboards/dashboard/dashboard.component';
 import { ToastsContainer } from './dashboards/dashboard/toasts-container.component';
 import { DashboardsModule } from "./dashboards/dashboards.module";
-// import { ArtikelComponent } from './artikel/artikel.component';
+import { ArtikelModule } from './artikel/artikel.module';
+import { ModalModule } from '../modal/modal.module';
 
 @NgModule({
   declarations: [
     DashboardComponent,
     ToastsContainer,
-    // ArtikelComponent,
   ],
   imports: [
     CommonModule,
@@ -39,6 +39,8 @@ import { DashboardsModule } from "./dashboards/dashboards.module";
     PagesRoutingModule,
     SharedModule,
     DashboardsModule,
+    ArtikelModule,
+    ModalModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

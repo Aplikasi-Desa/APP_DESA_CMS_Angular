@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-visi-misi',
@@ -10,6 +11,11 @@ export class VisiMisiComponent {
   data: any;
   page: any = 1;
   pageSize: any = 8;
+  displaySalinData: any;
+  
+    constructor(
+      private modalService: NgbModal
+    ) {}
 
   ngOnInit(): void {
     /**
@@ -19,5 +25,9 @@ export class VisiMisiComponent {
       { label: 'Pemerintahan' },
       { label: 'Visi Misi', active: true }
     ];
+  }
+
+  ModalSalinData(modalFilter: any) {
+    this.displaySalinData = this.modalService.open(modalFilter, { size: 'lg', centered: true });
   }
 }

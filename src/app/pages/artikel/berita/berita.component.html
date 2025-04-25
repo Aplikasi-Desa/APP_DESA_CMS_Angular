@@ -20,7 +20,7 @@
                     <div class="col-sm">
                         <div class="d-flex justify-content-sm-end">
                             <button type="button" class="btn btn-primary add-btn" data-bs-toggle="modal"
-                                id="create-btn" data-bs-target="#showModal"><i
+                                id="create-btn" data-bs-target="#showModal" (click)="ModalAgenda(modalBerita)"><i
                                     class="ri-add-fill align-bottom me-1"></i> Tambah</button>
                         </div>
                     </div>
@@ -113,3 +113,14 @@
         </div><!-- end card -->
     </div>
 </div>
+
+<ng-template #modalBerita let-modal>
+    <div class="modal-content">
+        <div class="modal-header">
+            <h6 class="modal-title">Tambah Berita</h6>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                (click)="modal.dismiss('Cross click')"></button>
+        </div>
+        <app-modal-berita></app-modal-berita>
+    </div>
+</ng-template>

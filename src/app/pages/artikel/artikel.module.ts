@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
@@ -17,9 +17,11 @@ import { NgbToastModule } from '@ng-bootstrap/ng-bootstrap';
 
 //Module
 import { SharedModule } from '../../shared/shared.module';
-import { BeritaRoutingModule } from './berita-routing.module';
 import { AgendaComponent } from './agenda/agenda.component';
 import { BeritaComponent } from './berita/berita.component';
+import { ArtikelRoutingModule } from './artikel-routing.module';
+import { NgSelectModule } from '@ng-select/ng-select';
+import { ModalModule } from 'src/app/modal/modal.module';
 
 @NgModule({
   declarations: [
@@ -36,12 +38,15 @@ import { BeritaComponent } from './berita/berita.component';
     SimplebarAngularModule,
     NgApexchartsModule,
     FlatpickrModule.forRoot(),
-    BeritaRoutingModule,
+    ArtikelRoutingModule,
     SharedModule,
     NgbTypeaheadModule,
     NgbPaginationModule,
     FormsModule,
-    ReactiveFormsModule
-  ],
+    ReactiveFormsModule,
+    NgSelectModule,
+    ModalModule
+],
+schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })
 export class ArtikelModule { }
