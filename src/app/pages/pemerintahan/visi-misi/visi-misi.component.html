@@ -1,131 +1,87 @@
 <!-- Start Breadcrumbs -->
 <app-breadcrumbs title="Visi Misi" [breadcrumbItems]="breadCrumbItems"></app-breadcrumbs>
 <!-- End Breadcrumbs -->
-
-<div class="row"></div>
-    <div class="col-lg-12">
-        <div class="card" id="applicationList">
-
-        <div class="card-body">
-            <div id="customerList">
-                <div class="row g-4 mb-3">
-                    <div class="col-sm-auto">
-                        <div class="d-flex gap-1">
-                            <div class="search-box ms-2">
-                                <input type="text" class="form-control search" placeholder="Search...">
-                                <i class="ri-search-line search-icon"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm">
-                        <div class="d-flex justify-content-sm-end">
-                            <button type="button" class="btn btn-primary add-btn" data-bs-toggle="modal"
-                                id="create-btn" data-bs-target="#showModal" (click)="ModalSalinData(modalSalin)">
-                                <i class="ri-add-fill align-bottom me-1"></i> Tambah</button>
-                        </div>
+<div class="row justify-content-center">
+    <div class="col-lg-10">
+        <div class="card">
+            <div class="bg-soft-primary position-relative">
+                <div class="card-body p-5">
+                    <div class="text-center">
+                        <h3 class="fw-semibold">Visi & Misi</h3>
+                        <p class="mb-0 text-muted">Last update: 16 Sept, 2022</p>
                     </div>
                 </div>
-
-                <div class="table-responsive mb-3">
-                    <table class="table table-nowrap mb-0">
-                        <thead class="table-light">
-                            <tr>
-                                <th scope="col">ID</th>
-                                <th scope="col">Name</th>
-                                <th scope="col">Job Title</th>
-                                <th scope="col">Date</th>
-                                <th scope="col">Status</th>
-                                <th scope="col"></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="fw-medium">01</td>
-                                    <td>Annette Black</td>
-                                    <td>Industrial Designer</td>
-                                    <td>10, Nov 2021</td>
-                                    <td><span class="badge badge-soft-success">Active</span></td>
-                                    <td>
-                                        <div class="hstack gap-3 fs-15">
-                                            <a href="javascript:void(0);" class="link-primary"><i
-                                                    class="ri-settings-4-line"></i></a>
-                                            <a href="javascript:void(0);" class="link-danger"><i
-                                                    class="ri-delete-bin-5-line"></i></a>
-                                        </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="fw-medium">02</td>
-                                <td>Bessie Cooper</td>
-                                <td>Graphic Designer</td>
-                                <td>13, Nov 2021</td>
-                                <td><span class="badge badge-soft-success">Active</span></td>
-                                <td>
-                                    <div class="hstack gap-3 fs-15">
-                                        <a href="javascript:void(0);" class="link-primary"><i
-                                                class="ri-settings-4-line"></i></a>
-                                        <a href="javascript:void(0);" class="link-danger"><i
-                                                class="ri-delete-bin-5-line"></i></a>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="fw-medium">03</td>
-                                <td>Leslie Alexander</td>
-                                <td>Product Manager</td>
-                                <td>17, Nov 2021</td>
-                                <td><span class="badge badge-soft-success">Active</span></td>
-                                <td>
-                                    <div class="hstack gap-3 fs-15">
-                                        <a href="javascript:void(0);" class="link-primary"><i
-                                                class="ri-settings-4-line"></i></a>
-                                        <a href="javascript:void(0);" class="link-danger"><i
-                                                class="ri-delete-bin-5-line"></i></a>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="fw-medium">04</td>
-                                <td>Lenora Sandoval</td>
-                                <td>Applications Engineer</td>
-                                <td>25, Nov 2021</td>
-                                <td><span class="badge badge-soft-danger">Disabled</span></td>
-                                <td>
-                                    <div class="hstack gap-3 fs-15">
-                                        <a href="javascript:void(0);" class="link-primary"><i
-                                                class="ri-settings-4-line"></i></a>
-                                        <a href="javascript:void(0);" class="link-danger"><i
-                                                class="ri-delete-bin-5-line"></i></a>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="shape">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns:svgjs="http://svgjs.com/svgjs" width="1440" height="60" preserveAspectRatio="none"
+                        viewBox="0 0 1440 60">
+                        <g mask="url(&quot;#SvgjsMask1001&quot;)" fill="none">
+                            <path d="M 0,4 C 144,13 432,48 720,49 C 1008,50 1296,17 1440,9L1440 60L0 60z"
+                                style="fill: var(--vz-card-bg-custom);"></path>
+                        </g>
+                        <defs>
+                            <mask id="SvgjsMask1001">
+                                <rect width="1440" height="60" fill="#ffffff"></rect>
+                            </mask>
+                        </defs>
+                    </svg>
                 </div>
-
-                <ngb-pagination class="d-flex justify-content-end pt-2" [collectionSize]="data? data.length : 0"
-                        [(page)]="page" [pageSize]="pageSize" aria-label="Custom pagination">
-                        <ng-template ngbPaginationPrevious let-page let-pages="pages">
-                            <i class="ci-arrow-left me-2"></i>
-                            Prev
-                        </ng-template>
-                        <ng-template ngbPaginationNext>
-                            Next
-                            <i class="ci-arrow-right ms-2"></i>
-                        </ng-template>
-                </ngb-pagination>
             </div>
-        </div><!-- end card -->
+            <div class="card-body p-4">
+                <div class="d-flex">
+                    <div class="flex-shrink-0 me-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-check-circle text-success icon-dual-success icon-xs">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h5 class="fw-semibold">Visi</h5>
+                        <p class="text-muted">At Website Name, accessible at Website.com, one of our main priorities is
+                            the privacy of our visitors. This Privacy Policy document contains types of information that
+                            is collected and recorded by Website Name and how we use it.</p>
+                    </div>
+                </div>
+
+                <div class="d-flex">
+                    <div class="flex-shrink-0 me-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-check-circle text-success icon-dual-success icon-xs">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                        </svg>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h5 class="fw-semibold">Misi</h5>
+                        <p class="text-muted vstack gap-2">
+                            <li>
+                                Provide, operate, and maintain our website
+                            </li>
+                            <li>
+                                Improve, personalize, and expand our website
+                            </li>
+                            <li>
+                                Understand and analyze how you use our website
+                            </li>
+                            <li>
+                                Develop new products, services, features, and functionality
+                            </li>
+                            <li>
+                                Send you emails
+                            </li>
+                            <li>
+                                Find and prevent fraud
+                            </li>
+                        </p>
+                    </div>
+                </div>
+                <div class="text-end">
+                    <a href="javascript:void(0);" class="btn btn-primary">Update</a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
-
-<ng-template #modalSalin let-modal>
-    <div class="modal-content">
-        <div class="modal-header">
-            <h6 class="modal-title">Salin Data</h6>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
-                (click)="modal.dismiss('Cross click')"></button>
-        </div>
-        <app-modal-agenda></app-modal-agenda>
-    </div>
-</ng-template>
