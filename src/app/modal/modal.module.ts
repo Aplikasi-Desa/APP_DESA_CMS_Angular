@@ -19,6 +19,7 @@ import { ModalPendudukComponent } from './modal-penduduk/modal-penduduk.componen
 import { ModalWilayahComponent } from './modal-wilayah/modal-wilayah.component';
 import { ModalAnggaranComponent } from './modal-anggaran/modal-anggaran.component';
 import { ModalVisiMisiComponent } from './modal-visi-misi/modal-visi-misi.component';
+import { ModalStrukturComponent } from './modal-struktur/modal-struktur.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { ModalVisiMisiComponent } from './modal-visi-misi/modal-visi-misi.compon
     ModalPendudukComponent,
     ModalWilayahComponent,
     ModalAnggaranComponent,
-    ModalVisiMisiComponent
+    ModalVisiMisiComponent,
+    ModalStrukturComponent
   ],
   imports: [
     CommonModule,
@@ -57,7 +59,8 @@ import { ModalVisiMisiComponent } from './modal-visi-misi/modal-visi-misi.compon
     ModalPendudukComponent,
     ModalWilayahComponent,
     ModalAnggaranComponent,
-    ModalVisiMisiComponent
+    ModalVisiMisiComponent,
+    ModalStrukturComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })

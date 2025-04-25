@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-struktur',
@@ -10,6 +11,11 @@ export class StrukturComponent {
   data: any;
   page: any = 1;
   pageSize: any = 8;
+  displayStruktur: any;
+  
+  constructor(
+    private modalService: NgbModal
+  ) {}
 
   ngOnInit(): void {
     /**
@@ -19,5 +25,9 @@ export class StrukturComponent {
       { label: 'Pemerintahan' },
       { label: 'Struktur', active: true }
     ];
+  }
+
+  ModalStruktur(modalFilter: any) {
+    this.displayStruktur = this.modalService.open(modalFilter, { size: 'lg', centered: true });
   }
 }
