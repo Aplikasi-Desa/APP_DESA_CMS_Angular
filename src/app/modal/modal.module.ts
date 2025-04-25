@@ -16,6 +16,7 @@ import { ModalAgendaComponent } from './modal-agenda/modal-agenda.component';
 import { ModalBeritaComponent } from './modal-berita/modal-berita.component';
 import { ModalDesaComponent } from './modal-desa/modal-desa.component';
 import { ModalPendudukComponent } from './modal-penduduk/modal-penduduk.component';
+import { ModalWilayahComponent } from './modal-wilayah/modal-wilayah.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { ModalPendudukComponent } from './modal-penduduk/modal-penduduk.componen
     ModalAgendaComponent,
     ModalBeritaComponent,
     ModalDesaComponent,
-    ModalPendudukComponent
+    ModalPendudukComponent,
+    ModalWilayahComponent
   ],
   imports: [
     CommonModule,
@@ -48,7 +50,8 @@ import { ModalPendudukComponent } from './modal-penduduk/modal-penduduk.componen
     ModalAgendaComponent,
     ModalBeritaComponent,
     ModalDesaComponent,
-    ModalPendudukComponent
+    ModalPendudukComponent,
+    ModalWilayahComponent
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })

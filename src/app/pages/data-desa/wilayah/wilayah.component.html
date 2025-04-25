@@ -20,7 +20,7 @@
                     <div class="col-sm">
                         <div class="d-flex justify-content-sm-end">
                             <button type="button" class="btn btn-primary add-btn" data-bs-toggle="modal"
-                                id="create-btn" data-bs-target="#showModal"><i
+                                id="create-btn" data-bs-target="#showModal" (click)="ModalWilayah(ModalWilayah)"><i
                                     class="ri-add-fill align-bottom me-1"></i> Tambah</button>
                         </div>
                     </div>
@@ -119,13 +119,13 @@
     </div>
 </div>
 
-<!-- <ng-template #modalDetail let-modal>
+<ng-template #modalWilayah let-modal>
     <div class="modal-content">
         <div class="modal-header">
-            <h6 class="modal-title">Tambah Data</h6>
+            <h6 class="modal-title">Tambah Data Wilayah</h6>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
                 (click)="modal.dismiss('Cross click')"></button>
         </div>
-        <app-modal-referensi-customer-visit></app-modal-referensi-customer-visit>
+        <app-modal-wilayah></app-modal-wilayah>
     </div>
-</ng-template> -->
+</ng-template>
