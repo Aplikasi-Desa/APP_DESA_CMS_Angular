@@ -81,4 +81,9 @@ export const MENU: MenuItem[] = [
       },
     ]
   },
+  {
+    id: 6,
+    label: 'MENUITEMS.LANDING.TEXT',
+    link: '/landing/landing-desa',
+  },
 ];

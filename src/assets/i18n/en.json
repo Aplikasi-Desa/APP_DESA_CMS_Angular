@@ -34,6 +34,9 @@
         "ANGGARAN": "Anggaran"
       }
     },
+    "LANDING": {
+      "TEXT": "Landing"
+    },
     "APPS": {
       "TEXT": "Apps",
       "LIST": {
@@ -155,14 +158,6 @@
         "SEARCHRESULTS": "Search Results",
         "PRIVACYPOLICY":"Privacy Policy",
         "TERMS&CONDITIONS":"Term & Conditions"
-      }
-    },
-    "LANDING": {
-      "TEXT": "Landing",
-      "LIST": {
-        "ONEPAGE": "One Page",
-        "NFTLANDING": "NFT Landing",
-        "JOB":"Job"
       }
     },
     "COMPONENTS": {
